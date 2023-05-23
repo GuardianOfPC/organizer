@@ -11,9 +11,10 @@ import static org.example.OrganizerApp.scanner;
 import static org.example.util.RegexUtil.*;
 
 public class UserXmlService {
+    private static final String employeeIdAttribute = "employeeId";
     private UserXmlService(){}
 
-    static Element createUserElement() {
+    static Element createUserElement(Document document) {
         Element userElement = new Element("user");
 
         logger.info("Введите табельный номер:");
@@ -22,7 +23,11 @@ public class UserXmlService {
             logger.error("Табельный номер должен быть числом. Пример: 123");
             return null;
         }
-        userElement.setAttribute("employeeId", employeeId);
+        if (findUserElementByAttribute(document, employeeIdAttribute, employeeId) != null) {
+            logger.error("Пользователь с таким табельным номером уже существует.");
+            return null;
+        }
+        userElement.setAttribute(employeeIdAttribute, employeeId);
 
         logger.info("Введите ФИО:");
         String name = scanner.nextLine();
@@ -81,7 +86,7 @@ public class UserXmlService {
         List<Element> userElements = document.getRootElement().getChildren("user");
 
         for (Element userElement : userElements) {
-            if (userElement.getAttributeValue("employeeId").equals(employeeId)) {
+            if (userElement.getAttributeValue(employeeIdAttribute).equals(employeeId)) {
                 return userElement;
             }
         }
@@ -102,7 +107,7 @@ public class UserXmlService {
     }
 
     static void printUserDetails(Element userElement) {
-        logger.info("Табельный номер: " + userElement.getAttributeValue("employeeId"));
+        logger.info("Табельный номер: " + userElement.getAttributeValue(employeeIdAttribute));
         logger.info("ФИО: " + userElement.getAttributeValue("name"));
         logger.info("Должность: " + userElement.getAttributeValue("position"));
         logger.info("Организация: " + userElement.getAttributeValue("organization"));

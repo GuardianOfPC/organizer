@@ -20,7 +20,7 @@ public class UserService {
             return;
         }
 
-        Element userElement = createUserElement();
+        Element userElement = createUserElement(document);
         if (userElement == null) {
             return;
         }
@@ -50,8 +50,9 @@ public class UserService {
         printUserDetails(userElement);
         logger.info("Введите новые данные пользователя:");
 
-        Element updatedUserElement = createUserElement();
+        Element updatedUserElement = createUserElement(document);
         if (updatedUserElement == null) {
+            logger.error("Ошибка создания элемента пользователя в XML.");
             return;
         }
 

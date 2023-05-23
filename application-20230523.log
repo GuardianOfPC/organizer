@@ -142,3 +142,59 @@
 2023-05-23 21:12:48.336 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
 2023-05-23 21:12:48.336 [main] INFO  org.example.OrganizerApp - 0. Выход
 2023-05-23 21:12:48.336 [main] INFO  org.example.OrganizerApp - Выберите операцию:
+2023-05-23 21:23:21.705 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:23:21.706 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:23:21.706 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:23:21.706 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:23:21.706 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:23:21.706 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:23:21.707 [main] INFO  org.example.OrganizerApp - Выберите операцию:
+2023-05-23 21:23:23.739 [main] INFO  org.example.OrganizerApp - Список пользователей:
+
+2023-05-23 21:23:23.740 [main] INFO  org.example.OrganizerApp - Табельный номер: 123
+2023-05-23 21:23:23.741 [main] INFO  org.example.OrganizerApp - ФИО: Одиноченко А.Д.
+2023-05-23 21:23:23.741 [main] INFO  org.example.OrganizerApp - Должность: Говнюк
+2023-05-23 21:23:23.741 [main] INFO  org.example.OrganizerApp - Организация: Гавно
+2023-05-23 21:23:23.741 [main] INFO  org.example.OrganizerApp - Адрес электронной почты: conik9999@mail.ru
+2023-05-23 21:23:23.741 [main] INFO  org.example.OrganizerApp - Список телефонов: 8-912-123-43-3
+
+2023-05-23 21:23:23.741 [main] INFO  org.example.OrganizerApp - Табельный номер: 1234
+2023-05-23 21:23:23.741 [main] INFO  org.example.OrganizerApp - ФИО: Одиноченко А.Д.
+2023-05-23 21:23:23.741 [main] INFO  org.example.OrganizerApp - Должность: Гандон
+2023-05-23 21:23:23.742 [main] INFO  org.example.OrganizerApp - Организация: Рога
+2023-05-23 21:23:23.742 [main] INFO  org.example.OrganizerApp - Адрес электронной почты: conik9999@mail.ru
+2023-05-23 21:23:23.742 [main] INFO  org.example.OrganizerApp - Список телефонов: 12-23-12
+
+2023-05-23 21:23:23.742 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:23:23.742 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:23:23.742 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:23:23.742 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:23:23.742 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:23:23.742 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:23:23.742 [main] INFO  org.example.OrganizerApp - Выберите операцию:
+2023-05-23 21:23:28.284 [main] INFO  org.example.OrganizerApp - Введите табельный номер:
+2023-05-23 21:23:30.065 [main] ERROR org.example.OrganizerApp - Пользователь с таким табельным номером уже существует.
+2023-05-23 21:23:30.065 [main] ERROR org.example.OrganizerApp - Ошибка создания элемента пользователя в XML.
+2023-05-23 21:23:30.065 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:23:30.065 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:23:30.065 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:23:30.066 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:23:30.066 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:23:30.066 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:23:30.066 [main] INFO  org.example.OrganizerApp - Выберите операцию:
+2023-05-23 21:25:35.255 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:25:35.257 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:25:35.257 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:25:35.257 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:25:35.257 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:25:35.257 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:25:35.257 [main] INFO  org.example.OrganizerApp - Выберите операцию:
+2023-05-23 21:25:36.528 [main] INFO  org.example.OrganizerApp - Введите табельный номер:
+2023-05-23 21:25:38.206 [main] ERROR org.example.OrganizerApp - Пользователь с таким табельным номером уже существует.
+2023-05-23 21:25:38.207 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:25:38.207 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:25:38.207 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:25:38.207 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:25:38.207 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:25:38.207 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:25:38.207 [main] INFO  org.example.OrganizerApp - Выберите операцию:

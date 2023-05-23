@@ -43,6 +43,7 @@ public class XmlUtil {
             logger.error("Ошибка парсинга XML-файла: " + e.getMessage());
         }
 
+        logger.error("Ошибка чтения файла XML.");
         return null;
     }
 
