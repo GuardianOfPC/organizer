@@ -11,7 +11,7 @@ import static org.example.OrganizerApp.scanner;
 import static org.example.util.RegexUtil.*;
 
 public class UserXmlService {
-    private static final String employeeIdAttribute = "employeeId";
+    private static final String EMPLOYEEID_ATTRIBUTE = "employeeId";
     private UserXmlService(){}
 
     static Element createUserElement(Document document) {
@@ -23,11 +23,11 @@ public class UserXmlService {
             logger.error("Табельный номер должен быть числом. Пример: 123");
             return null;
         }
-        if (findUserElementByAttribute(document, employeeIdAttribute, employeeId) != null) {
+        if (findUserElementByAttribute(document, EMPLOYEEID_ATTRIBUTE, employeeId) != null) {
             logger.error("Пользователь с таким табельным номером уже существует.");
             return null;
         }
-        userElement.setAttribute(employeeIdAttribute, employeeId);
+        userElement.setAttribute(EMPLOYEEID_ATTRIBUTE, employeeId);
 
         logger.info("Введите ФИО:");
         String name = scanner.nextLine();
@@ -86,7 +86,7 @@ public class UserXmlService {
         List<Element> userElements = document.getRootElement().getChildren("user");
 
         for (Element userElement : userElements) {
-            if (userElement.getAttributeValue(employeeIdAttribute).equals(employeeId)) {
+            if (userElement.getAttributeValue(EMPLOYEEID_ATTRIBUTE).equals(employeeId)) {
                 return userElement;
             }
         }
@@ -107,7 +107,7 @@ public class UserXmlService {
     }
 
     static void printUserDetails(Element userElement) {
-        logger.info("Табельный номер: " + userElement.getAttributeValue(employeeIdAttribute));
+        logger.info("Табельный номер: " + userElement.getAttributeValue(EMPLOYEEID_ATTRIBUTE));
         logger.info("ФИО: " + userElement.getAttributeValue("name"));
         logger.info("Должность: " + userElement.getAttributeValue("position"));
         logger.info("Организация: " + userElement.getAttributeValue("organization"));

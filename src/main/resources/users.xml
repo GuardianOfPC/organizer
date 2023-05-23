@@ -2,4 +2,5 @@
 <users>
   <user employeeId="123" name="Одиноченко А.Д." position="Говнюк" organization="Гавно" email="conik9999@mail.ru" phones="8-912-123-43-3" />
   <user employeeId="1234" name="Одиноченко А.Д." position="Гандон" organization="Рога" email="conik9999@mail.ru" phones="12-23-12" />
+  <user employeeId="12334" name="Одиноченко А.Д." position="Говнюк" organization="Рога и копыта" email="conik9999@mail.ru" phones="812-12-32" />
 </users>
