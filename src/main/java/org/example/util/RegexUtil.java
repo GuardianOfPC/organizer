@@ -1,6 +1,8 @@
 package org.example.util;
 
 public class RegexUtil {
+    private RegexUtil(){}
+
     public static boolean isNumeric(String str) {
         try {
             Integer.parseInt(str);

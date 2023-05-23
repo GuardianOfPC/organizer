@@ -1,5 +1,9 @@
 package org.example;
 
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.Scanner;
 
 import static org.example.service.UserService.*;
@@ -7,6 +11,7 @@ import static org.example.util.XmlUtil.createEmptyXmlFileIfNeeded;
 
 public class OrganizerApp {
     public static final Scanner scanner = new Scanner(System.in);
+    public static final Logger logger = LogManager.getLogger(OrganizerApp.class);
 
     public static void main(String[] args) {
         createEmptyXmlFileIfNeeded();
@@ -15,15 +20,15 @@ public class OrganizerApp {
         do {
             printMenu();
             choice = scanner.nextInt();
-            scanner.nextLine(); // считываем символ новой строки после ввода числа
+            scanner.nextLine();
 
             switch (choice) {
                 case 1 -> addUser();
                 case 2 -> editUser();
                 case 3 -> listUsers();
                 case 4 -> findUser();
-                case 0 -> System.out.println("Выход из программы.");
-                default -> System.out.println("Некорректный выбор. Повторите попытку.");
+                case 0 -> logger.info("Выход из программы.");
+                default -> logger.error("Некорректный выбор. Повторите попытку.");
             }
         } while (choice != 0);
 
@@ -31,12 +36,12 @@ public class OrganizerApp {
     }
 
     private static void printMenu() {
-        System.out.println("Меню:");
-        System.out.println("1. Добавить нового пользователя");
-        System.out.println("2. Редактировать пользователя");
-        System.out.println("3. Получить список пользователей");
-        System.out.println("4. Получить пользователя по заданным атрибутам");
-        System.out.println("0. Выход");
-        System.out.println("Выберите операцию:");
+        logger.info("Меню:");
+        logger.info("1. Добавить нового пользователя");
+        logger.info("2. Редактировать пользователя");
+        logger.info("3. Получить список пользователей");
+        logger.info("4. Получить пользователя по заданным атрибутам");
+        logger.info("0. Выход");
+        logger.info("Выберите операцию:");
     }
 }

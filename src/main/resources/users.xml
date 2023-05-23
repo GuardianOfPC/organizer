@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+  <user employeeId="123" name="Одиноченко А.Д." position="Говнюк" organization="Гавно" email="conik9999@mail.ru" phones="8-912-123-43-3" />
+  <user employeeId="1234" name="Одиноченко А.Д." position="Гандон" organization="Рога" email="conik9999@mail.ru" phones="12-23-12" />
+</users>

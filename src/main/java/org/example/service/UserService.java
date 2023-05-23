@@ -5,12 +5,15 @@ import org.jdom2.Element;
 
 import java.util.List;
 
+import static org.example.OrganizerApp.logger;
 import static org.example.OrganizerApp.scanner;
 import static org.example.service.UserXmlService.*;
 import static org.example.util.XmlUtil.readXmlFile;
 import static org.example.util.XmlUtil.saveXmlFile;
 
 public class UserService {
+    private UserService(){}
+
     public static void addUser() {
         Document document = readXmlFile();
         if (document == null) {
@@ -25,11 +28,11 @@ public class UserService {
         Element rootElement = document.getRootElement();
         rootElement.addContent(userElement);
         saveXmlFile(document);
-        System.out.println("Пользователь успешно добавлен.");
+        logger.info("Пользователь успешно добавлен.");
     }
 
     public static void editUser() {
-        System.out.println("Введите табельный номер пользователя для редактирования:");
+        logger.info("Введите табельный номер пользователя для редактирования:");
         String employeeId = scanner.nextLine();
 
         Document document = readXmlFile();
@@ -39,13 +42,13 @@ public class UserService {
 
         Element userElement = findUserElement(document, employeeId);
         if (userElement == null) {
-            System.out.println("Пользователь с указанным табельным номером не найден.");
+            logger.error("Пользователь с указанным табельным номером не найден.");
             return;
         }
 
-        System.out.println("Текущие данные пользователя:");
+        logger.info("Текущие данные пользователя:");
         printUserDetails(userElement);
-        System.out.println("Введите новые данные пользователя:");
+        logger.info("Введите новые данные пользователя:");
 
         Element updatedUserElement = createUserElement();
         if (updatedUserElement == null) {
@@ -56,7 +59,7 @@ public class UserService {
         rootElement.removeContent(userElement);
         rootElement.addContent(updatedUserElement);
         saveXmlFile(document);
-        System.out.println("Данные пользователя успешно обновлены.");
+        logger.info("Данные пользователя успешно обновлены.");
     }
 
     public static void listUsers() {
@@ -67,24 +70,24 @@ public class UserService {
 
         List<Element> userElements = document.getRootElement().getChildren("user");
         if (userElements.isEmpty()) {
-            System.out.println("Список пользователей пуст.");
+            logger.error("Список пользователей пуст.");
             return;
         }
 
-        System.out.println("Список пользователей:");
+        logger.info("Список пользователей:\n");
         for (Element userElement : userElements) {
             printUserDetails(userElement);
         }
     }
 
     public static void findUser() {
-        System.out.println("Выберите атрибут для поиска пользователя:");
-        System.out.println("1. Табельный номер");
-        System.out.println("2. ФИО");
-        System.out.println("3. Должность");
-        System.out.println("4. Организация");
-        System.out.println("5. Адрес электронной почты");
-        System.out.println("6. Список телефонов");
+        logger.info("Выберите атрибут для поиска пользователя:");
+        logger.info("1. Табельный номер");
+        logger.info("2. ФИО");
+        logger.info("3. Должность");
+        logger.info("4. Организация");
+        logger.info("5. Адрес электронной почты");
+        logger.info("6. Список телефонов");
 
         int attributeChoice = scanner.nextInt();
         scanner.nextLine();
@@ -98,12 +101,12 @@ public class UserService {
             case 5 -> attributeName = "email";
             case 6 -> attributeName = "phones";
             default -> {
-                System.out.println("Некорректный выбор атрибута. Повторите попытку.");
+                logger.error("Некорректный выбор атрибута. Повторите попытку.");
                 return;
             }
         }
 
-        System.out.println("Введите значение атрибута для поиска:");
+        logger.info("Введите значение атрибута для поиска:");
         String attributeValue = scanner.nextLine();
 
         Document document = readXmlFile();
@@ -113,11 +116,11 @@ public class UserService {
 
         Element userElement = findUserElementByAttribute(document, attributeName, attributeValue);
         if (userElement == null) {
-            System.out.println("Пользователь с указанными атрибутами не найден.");
+            logger.error("Пользователь с указанными атрибутами не найден.");
             return;
         }
 
-        System.out.println("Найденный пользователь:");
+        logger.info("Найденный пользователь:");
         printUserDetails(userElement);
     }
 }

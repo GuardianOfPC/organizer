@@ -6,50 +6,52 @@ import org.jdom2.Element;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.example.OrganizerApp.logger;
 import static org.example.OrganizerApp.scanner;
 import static org.example.util.RegexUtil.*;
 
 public class UserXmlService {
+    private UserXmlService(){}
 
     static Element createUserElement() {
         Element userElement = new Element("user");
 
-        System.out.println("Введите табельный номер:");
+        logger.info("Введите табельный номер:");
         String employeeId = scanner.nextLine();
         if (!isNumeric(employeeId)) {
-            System.out.println("Табельный номер должен быть числом. Пример: 123");
+            logger.error("Табельный номер должен быть числом. Пример: 123");
             return null;
         }
         userElement.setAttribute("employeeId", employeeId);
 
-        System.out.println("Введите ФИО:");
+        logger.info("Введите ФИО:");
         String name = scanner.nextLine();
         if (!isValidName(name)) {
-            System.out.println("Введите ФИО по образцу. Пример: Иванов И.И.");
+            logger.error("Введите ФИО по образцу. Пример: Иванов И.И.");
             return null;
         }
         userElement.setAttribute("name", name);
 
-        System.out.println("Введите должность:");
+        logger.info("Введите должность:");
         String position = scanner.nextLine();
         if (!isValidPosition(position)) {
-            System.out.println("Должность должна состоять только из букв и пробелов. Пример: Главный агроном");
+            logger.error("Должность должна состоять только из букв и пробелов. Пример: Главный агроном");
             return null;
         }
         userElement.setAttribute("position", position);
 
-        System.out.println("Введите организацию:");
+        logger.info("Введите организацию:");
         String organization = scanner.nextLine();
         if (!isValidOrganization(organization)) {
-            System.out.println("Организация должна состоять только из букв и пробелов. Пример: Рога и копыта");
+            logger.error("Организация должна состоять только из букв и пробелов. Пример: Рога и копыта");
             return null;
         }
         userElement.setAttribute("organization", organization);
 
-        System.out.println("Введите адрес электронной почты:");
+        logger.info("Введите адрес электронной почты:");
         String email = scanner.nextLine();
         if (!isValidEmail(email)) {
-            System.out.println("Некорректный адрес электронной почты. Пример: ivanov@hornsHooves.ru");
+            logger.error("Некорректный адрес электронной почты. Пример: ivanov@hornsHooves.ru");
             return null;
         }
         userElement.setAttribute("email", email);
@@ -57,15 +59,15 @@ public class UserXmlService {
         List<String> phones = new ArrayList<>();
         boolean morePhones = true;
         while (morePhones) {
-            System.out.println("Введите номер телефона:");
+            logger.info("Введите номер телефона:");
             String phone = scanner.nextLine();
             if (!isValidPhone(phone)) {
-                System.out.println("Некорректный номер телефона. Пример: 8-800-123-45-67 или 11-22-33");
+                logger.error("Некорректный номер телефона. Пример: 8-800-123-45-67 или 11-22-33");
                 return null;
             }
             phones.add(phone);
 
-            System.out.println("Хотите добавить еще номер телефона? (да/нет):");
+            logger.info("Хотите добавить еще номер телефона? (да/нет):");
             String answer = scanner.nextLine();
             morePhones = answer.equalsIgnoreCase("да");
         }
@@ -100,12 +102,11 @@ public class UserXmlService {
     }
 
     static void printUserDetails(Element userElement) {
-        System.out.println("Табельный номер: " + userElement.getAttributeValue("employeeId"));
-        System.out.println("ФИО: " + userElement.getAttributeValue("name"));
-        System.out.println("Должность: " + userElement.getAttributeValue("position"));
-        System.out.println("Организация: " + userElement.getAttributeValue("organization"));
-        System.out.println("Адрес электронной почты: " + userElement.getAttributeValue("email"));
-        System.out.println("Список телефонов: " + userElement.getAttributeValue("phones"));
-        System.out.println();
+        logger.info("Табельный номер: " + userElement.getAttributeValue("employeeId"));
+        logger.info("ФИО: " + userElement.getAttributeValue("name"));
+        logger.info("Должность: " + userElement.getAttributeValue("position"));
+        logger.info("Организация: " + userElement.getAttributeValue("organization"));
+        logger.info("Адрес электронной почты: " + userElement.getAttributeValue("email"));
+        logger.info("Список телефонов: " + userElement.getAttributeValue("phones") + "\n");
     }
 }

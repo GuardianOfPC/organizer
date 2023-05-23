@@ -1,0 +1,144 @@
+2023-05-23 21:06:30.027 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:06:30.029 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:06:30.029 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:06:30.029 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:06:30.029 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:06:30.029 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:06:30.029 [main] INFO  org.example.OrganizerApp - Выберите операцию:
+2023-05-23 21:10:36.570 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:10:36.571 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:10:36.571 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:10:36.571 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:10:36.571 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:10:36.572 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:10:36.572 [main] INFO  org.example.OrganizerApp - Выберите операцию:
+2023-05-23 21:10:43.483 [main] INFO  org.example.OrganizerApp - Список пользователей:
+2023-05-23 21:10:43.484 [main] INFO  org.example.OrganizerApp - Табельный номер: 123
+2023-05-23 21:10:43.485 [main] INFO  org.example.OrganizerApp - ФИО: Одиноченко А.Д.
+2023-05-23 21:10:43.485 [main] INFO  org.example.OrganizerApp - Должность: Говнюк
+2023-05-23 21:10:43.485 [main] INFO  org.example.OrganizerApp - Организация: Гавно
+2023-05-23 21:10:43.485 [main] INFO  org.example.OrganizerApp - Адрес электронной почты: conik9999@mail.ru
+2023-05-23 21:10:43.485 [main] INFO  org.example.OrganizerApp - Список телефонов: 8-912-123-43-3
+2023-05-23 21:10:43.485 [main] INFO  org.example.OrganizerApp - 
+
+2023-05-23 21:10:43.485 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:10:43.485 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:10:43.486 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:10:43.486 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:10:43.486 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:10:43.486 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:10:43.486 [main] INFO  org.example.OrganizerApp - Выберите операцию:
+2023-05-23 21:10:53.029 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:10:53.031 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:10:53.031 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:10:53.031 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:10:53.031 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:10:53.031 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:10:53.031 [main] INFO  org.example.OrganizerApp - Выберите операцию:
+2023-05-23 21:10:54.441 [main] INFO  org.example.OrganizerApp - Список пользователей:
+2023-05-23 21:10:54.442 [main] INFO  org.example.OrganizerApp - Табельный номер: 123
+2023-05-23 21:10:54.443 [main] INFO  org.example.OrganizerApp - ФИО: Одиноченко А.Д.
+2023-05-23 21:10:54.443 [main] INFO  org.example.OrganizerApp - Должность: Говнюк
+2023-05-23 21:10:54.443 [main] INFO  org.example.OrganizerApp - Организация: Гавно
+2023-05-23 21:10:54.443 [main] INFO  org.example.OrganizerApp - Адрес электронной почты: conik9999@mail.ru
+2023-05-23 21:10:54.443 [main] INFO  org.example.OrganizerApp - Список телефонов: 8-912-123-43-3
+2023-05-23 21:10:54.443 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:10:54.443 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:10:54.443 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:10:54.443 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:10:54.444 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:10:54.444 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:10:54.444 [main] INFO  org.example.OrganizerApp - Выберите операцию:
+2023-05-23 21:11:13.796 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:11:13.798 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:11:13.798 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:11:13.798 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:11:13.798 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:11:13.798 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:11:13.798 [main] INFO  org.example.OrganizerApp - Выберите операцию:
+2023-05-23 21:11:17.401 [main] INFO  org.example.OrganizerApp - Список пользователей:
+2023-05-23 21:11:17.403 [main] INFO  org.example.OrganizerApp - Табельный номер: 123
+2023-05-23 21:11:17.403 [main] INFO  org.example.OrganizerApp - ФИО: Одиноченко А.Д.
+2023-05-23 21:11:17.403 [main] INFO  org.example.OrganizerApp - Должность: Говнюк
+2023-05-23 21:11:17.403 [main] INFO  org.example.OrganizerApp - Организация: Гавно
+2023-05-23 21:11:17.403 [main] INFO  org.example.OrganizerApp - Адрес электронной почты: conik9999@mail.ru
+2023-05-23 21:11:17.403 [main] INFO  org.example.OrganizerApp - Список телефонов: 8-912-123-43-3
+
+2023-05-23 21:11:17.404 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:11:17.404 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:11:17.404 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:11:17.404 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:11:17.404 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:11:17.404 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:11:17.404 [main] INFO  org.example.OrganizerApp - Выберите операцию:
+2023-05-23 21:11:52.610 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:11:52.611 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:11:52.611 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:11:52.611 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:11:52.611 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:11:52.611 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:11:52.612 [main] INFO  org.example.OrganizerApp - Выберите операцию:
+2023-05-23 21:11:54.126 [main] INFO  org.example.OrganizerApp - Список пользователей:
+
+2023-05-23 21:11:54.127 [main] INFO  org.example.OrganizerApp - Табельный номер: 123
+2023-05-23 21:11:54.127 [main] INFO  org.example.OrganizerApp - ФИО: Одиноченко А.Д.
+2023-05-23 21:11:54.127 [main] INFO  org.example.OrganizerApp - Должность: Говнюк
+2023-05-23 21:11:54.127 [main] INFO  org.example.OrganizerApp - Организация: Гавно
+2023-05-23 21:11:54.127 [main] INFO  org.example.OrganizerApp - Адрес электронной почты: conik9999@mail.ru
+2023-05-23 21:11:54.127 [main] INFO  org.example.OrganizerApp - Список телефонов: 8-912-123-43-3
+
+2023-05-23 21:11:54.127 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:11:54.128 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:11:54.128 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:11:54.128 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:11:54.128 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:11:54.128 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:11:54.128 [main] INFO  org.example.OrganizerApp - Выберите операцию:
+2023-05-23 21:12:00.767 [main] INFO  org.example.OrganizerApp - Введите табельный номер:
+2023-05-23 21:12:02.473 [main] INFO  org.example.OrganizerApp - Введите ФИО:
+2023-05-23 21:12:05.638 [main] ERROR org.example.OrganizerApp - Введите ФИО по образцу. Пример: Иванов И.И.
+2023-05-23 21:12:05.638 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:12:05.638 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:12:05.638 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:12:05.638 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:12:05.638 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:12:05.638 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:12:05.639 [main] INFO  org.example.OrganizerApp - Выберите операцию:
+2023-05-23 21:12:19.656 [main] INFO  org.example.OrganizerApp - Введите табельный номер:
+2023-05-23 21:12:21.467 [main] INFO  org.example.OrganizerApp - Введите ФИО:
+2023-05-23 21:12:27.658 [main] INFO  org.example.OrganizerApp - Введите должность:
+2023-05-23 21:12:32.034 [main] INFO  org.example.OrganizerApp - Введите организацию:
+2023-05-23 21:12:33.634 [main] INFO  org.example.OrganizerApp - Введите адрес электронной почты:
+2023-05-23 21:12:37.194 [main] INFO  org.example.OrganizerApp - Введите номер телефона:
+2023-05-23 21:12:42.299 [main] INFO  org.example.OrganizerApp - Хотите добавить еще номер телефона? (да/нет):
+2023-05-23 21:12:44.734 [main] INFO  org.example.OrganizerApp - Пользователь успешно добавлен.
+2023-05-23 21:12:44.734 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:12:44.734 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:12:44.734 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:12:44.734 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:12:44.734 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:12:44.734 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:12:44.734 [main] INFO  org.example.OrganizerApp - Выберите операцию:
+2023-05-23 21:12:48.335 [main] INFO  org.example.OrganizerApp - Список пользователей:
+
+2023-05-23 21:12:48.335 [main] INFO  org.example.OrganizerApp - Табельный номер: 123
+2023-05-23 21:12:48.335 [main] INFO  org.example.OrganizerApp - ФИО: Одиноченко А.Д.
+2023-05-23 21:12:48.335 [main] INFO  org.example.OrganizerApp - Должность: Говнюк
+2023-05-23 21:12:48.335 [main] INFO  org.example.OrganizerApp - Организация: Гавно
+2023-05-23 21:12:48.335 [main] INFO  org.example.OrganizerApp - Адрес электронной почты: conik9999@mail.ru
+2023-05-23 21:12:48.335 [main] INFO  org.example.OrganizerApp - Список телефонов: 8-912-123-43-3
+
+2023-05-23 21:12:48.335 [main] INFO  org.example.OrganizerApp - Табельный номер: 123
+2023-05-23 21:12:48.335 [main] INFO  org.example.OrganizerApp - ФИО: Одиноченко А.Д.
+2023-05-23 21:12:48.335 [main] INFO  org.example.OrganizerApp - Должность: Гандон
+2023-05-23 21:12:48.336 [main] INFO  org.example.OrganizerApp - Организация: Рога
+2023-05-23 21:12:48.336 [main] INFO  org.example.OrganizerApp - Адрес электронной почты: conik9999@mail.ru
+2023-05-23 21:12:48.336 [main] INFO  org.example.OrganizerApp - Список телефонов: 12-23-12
+
+2023-05-23 21:12:48.336 [main] INFO  org.example.OrganizerApp - Меню:
+2023-05-23 21:12:48.336 [main] INFO  org.example.OrganizerApp - 1. Добавить нового пользователя
+2023-05-23 21:12:48.336 [main] INFO  org.example.OrganizerApp - 2. Редактировать пользователя
+2023-05-23 21:12:48.336 [main] INFO  org.example.OrganizerApp - 3. Получить список пользователей
+2023-05-23 21:12:48.336 [main] INFO  org.example.OrganizerApp - 4. Получить пользователя по заданным атрибутам
+2023-05-23 21:12:48.336 [main] INFO  org.example.OrganizerApp - 0. Выход
+2023-05-23 21:12:48.336 [main] INFO  org.example.OrganizerApp - Выберите операцию:

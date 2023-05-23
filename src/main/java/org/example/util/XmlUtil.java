@@ -11,8 +11,12 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import static org.example.OrganizerApp.logger;
+
 public class XmlUtil {
     private static final String XML_FILE_PATH = "src\\main\\resources\\users.xml";
+
+    private XmlUtil(){}
 
     public static void createEmptyXmlFileIfNeeded() {
         File xmlFile = new File(XML_FILE_PATH);
@@ -26,7 +30,7 @@ public class XmlUtil {
     public static Document readXmlFile() {
         File xmlFile = new File(XML_FILE_PATH);
         if (!xmlFile.exists()) {
-            System.out.println("XML-файл не существует.");
+            logger.error("XML-файл не существует.");
             return null;
         }
 
@@ -34,9 +38,9 @@ public class XmlUtil {
             SAXBuilder saxBuilder = new SAXBuilder();
             return saxBuilder.build(xmlFile);
         } catch (IOException e) {
-            System.out.println("Ошибка чтения XML-файла: " + e.getMessage());
+            logger.error("Ошибка чтения XML-файла: " + e.getMessage());
         } catch (JDOMException e) {
-            System.out.println("Ошибка парсинга XML-файла: " + e.getMessage());
+            logger.error("Ошибка парсинга XML-файла: " + e.getMessage());
         }
 
         return null;
@@ -49,7 +53,7 @@ public class XmlUtil {
                 xmlOutputter.output(document, writer);
             }
         } catch (IOException e) {
-            System.out.println("Ошибка сохранения XML-файла: " + e.getMessage());
+            logger.error("Ошибка сохранения XML-файла: " + e.getMessage());
         }
     }
 }
