@@ -1,4 +1,4 @@
-package org.example;
+package org.example.util;
 
 import org.jdom2.Document;
 import org.jdom2.Element;
@@ -14,7 +14,7 @@ import java.io.IOException;
 public class XmlUtil {
     private static final String XML_FILE_PATH = "src\\main\\resources\\users.xml";
 
-    static void createEmptyXmlFileIfNeeded() {
+    public static void createEmptyXmlFileIfNeeded() {
         File xmlFile = new File(XML_FILE_PATH);
         if (!xmlFile.exists()) {
             Element rootElement = new Element("users");
@@ -23,7 +23,7 @@ public class XmlUtil {
         }
     }
 
-    static Document readXmlFile() {
+    public static Document readXmlFile() {
         File xmlFile = new File(XML_FILE_PATH);
         if (!xmlFile.exists()) {
             System.out.println("XML-файл не существует.");
@@ -42,7 +42,7 @@ public class XmlUtil {
         return null;
     }
 
-    static void saveXmlFile(Document document) {
+    public static void saveXmlFile(Document document) {
         try {
             XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat());
             try (FileWriter writer = new FileWriter(XML_FILE_PATH)) {

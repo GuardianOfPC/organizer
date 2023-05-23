@@ -1,4 +1,4 @@
-package org.example;
+package org.example.service;
 
 import org.jdom2.Document;
 import org.jdom2.Element;
@@ -6,12 +6,12 @@ import org.jdom2.Element;
 import java.util.List;
 
 import static org.example.OrganizerApp.scanner;
-import static org.example.UserXmlService.*;
-import static org.example.XmlUtil.readXmlFile;
-import static org.example.XmlUtil.saveXmlFile;
+import static org.example.service.UserXmlService.*;
+import static org.example.util.XmlUtil.readXmlFile;
+import static org.example.util.XmlUtil.saveXmlFile;
 
 public class UserService {
-    static void addUser() {
+    public static void addUser() {
         Document document = readXmlFile();
         if (document == null) {
             return;
@@ -28,7 +28,7 @@ public class UserService {
         System.out.println("Пользователь успешно добавлен.");
     }
 
-    static void editUser() {
+    public static void editUser() {
         System.out.println("Введите табельный номер пользователя для редактирования:");
         String employeeId = scanner.nextLine();
 
@@ -59,7 +59,7 @@ public class UserService {
         System.out.println("Данные пользователя успешно обновлены.");
     }
 
-    static void listUsers() {
+    public static void listUsers() {
         Document document = readXmlFile();
         if (document == null) {
             return;
@@ -77,7 +77,7 @@ public class UserService {
         }
     }
 
-    static void findUser() {
+    public static void findUser() {
         System.out.println("Выберите атрибут для поиска пользователя:");
         System.out.println("1. Табельный номер");
         System.out.println("2. ФИО");

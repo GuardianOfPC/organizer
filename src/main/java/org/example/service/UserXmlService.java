@@ -1,4 +1,4 @@
-package org.example;
+package org.example.service;
 
 import org.jdom2.Document;
 import org.jdom2.Element;
@@ -6,8 +6,8 @@ import org.jdom2.Element;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.example.CheckingUtil.*;
 import static org.example.OrganizerApp.scanner;
+import static org.example.util.RegexUtil.*;
 
 public class UserXmlService {
 
@@ -17,7 +17,7 @@ public class UserXmlService {
         System.out.println("Введите табельный номер:");
         String employeeId = scanner.nextLine();
         if (!isNumeric(employeeId)) {
-            System.out.println("Табельный номер должен быть числом.");
+            System.out.println("Табельный номер должен быть числом. Пример: 123");
             return null;
         }
         userElement.setAttribute("employeeId", employeeId);
@@ -25,7 +25,7 @@ public class UserXmlService {
         System.out.println("Введите ФИО:");
         String name = scanner.nextLine();
         if (!isValidName(name)) {
-            System.out.println("Введите ФИО по образцу: Иванов И.И.");
+            System.out.println("Введите ФИО по образцу. Пример: Иванов И.И.");
             return null;
         }
         userElement.setAttribute("name", name);
@@ -33,7 +33,7 @@ public class UserXmlService {
         System.out.println("Введите должность:");
         String position = scanner.nextLine();
         if (!isValidPosition(position)) {
-            System.out.println("Должность должна состоять только из букв и пробелов.");
+            System.out.println("Должность должна состоять только из букв и пробелов. Пример: Главный агроном");
             return null;
         }
         userElement.setAttribute("position", position);
@@ -41,7 +41,7 @@ public class UserXmlService {
         System.out.println("Введите организацию:");
         String organization = scanner.nextLine();
         if (!isValidOrganization(organization)) {
-            System.out.println("Организация должна состоять только из букв и пробелов.");
+            System.out.println("Организация должна состоять только из букв и пробелов. Пример: Рога и копыта");
             return null;
         }
         userElement.setAttribute("organization", organization);
@@ -49,7 +49,7 @@ public class UserXmlService {
         System.out.println("Введите адрес электронной почты:");
         String email = scanner.nextLine();
         if (!isValidEmail(email)) {
-            System.out.println("Некорректный адрес электронной почты.");
+            System.out.println("Некорректный адрес электронной почты. Пример: ivanov@hornsHooves.ru");
             return null;
         }
         userElement.setAttribute("email", email);
@@ -60,7 +60,7 @@ public class UserXmlService {
             System.out.println("Введите номер телефона:");
             String phone = scanner.nextLine();
             if (!isValidPhone(phone)) {
-                System.out.println("Номер телефона должен быть в формате XXX-XXX-XXX.");
+                System.out.println("Некорректный номер телефона. Пример: 8-800-123-45-67 или 11-22-33");
                 return null;
             }
             phones.add(phone);

@@ -2,11 +2,11 @@ package org.example;
 
 import java.util.Scanner;
 
-import static org.example.UserService.*;
-import static org.example.XmlUtil.createEmptyXmlFileIfNeeded;
+import static org.example.service.UserService.*;
+import static org.example.util.XmlUtil.createEmptyXmlFileIfNeeded;
 
 public class OrganizerApp {
-    static final Scanner scanner = new Scanner(System.in);
+    public static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         createEmptyXmlFileIfNeeded();
